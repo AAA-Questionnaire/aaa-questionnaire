@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asian Apicultural Association (AAA) - Host Country Eligibility Questionnaire</title>
+    <style>
+        :root {
+            --primary-color: #2c5e3b;
+            --secondary-color: #d4af37;
+            --bg-color: #f8f9fa;
+            --text-color: #333;
+            --card-bg: #fff;
+            --border-color: #ddd;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+        header {
+            text-align: center;
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        header h1 {
+            color: var(--primary-color);
+            margin: 0 0 10px;
+            font-size: 24px;
+        }
+        header h2 {
+            font-size: 18px;
+            color: #666;
+            margin: 0 0 15px;
+        }
+        header p {
+            font-size: 14px;
+            color: #555;
+            background: #fdfae7;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #f3e5ab;
+        }
+        fieldset {
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 25px;
+            background: #fff;
+        }
+        legend {
+            font-weight: bold;
+            color: var(--primary-color);
+            background: #eef4f0;
+            padding: 8px 15px;
+            border-radius: 4px;
+            font-size: 16px;
+            border: 1px solid #d5e2da;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+            font-size: 14px;
+        }
+        input[type="text"], input[type="email"], input[type="tel"], textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+        input:focus, textarea:focus {
+            border-color: var(--primary-color);
+            outline: none;
+            box-shadow: 0 0 5px rgba(44, 94, 59, 0.2);
+        }
+        .question-box {
+            background: #fafafa;
+            border: 1px solid #eee;
+            padding: 12px 15px;
+            border-radius: 6px;
+            margin-bottom: 15px;
+        }
+        .question-title {
+            font-weight: 600;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+        .radio-group {
+            display: flex;
+            gap: 20px;
+        }
+        .radio-group label {
+            font-weight: normal;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .declaration {
+            background: #f4f8f5;
+            padding: 15px;
+            border-radius: 6px;
+            border-left: 4px solid var(--primary-color);
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+        .submit-btn {
+            background-color: var(--primary-color);
+            color: #fff;
+            border: none;
+            padding: 12px 30px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+            width: 100%;
+            transition: background 0.3s;
+        }
+        .submit-btn:hover {
+            background-color: #1f4227;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>ASIAN APICULTURAL ASSOCIATION · AAA</h1>
+        <h2>Host Country Eligibility Questionnaire</h2>
+        <p><strong>Purpose:</strong> To evaluate the legal, administrative, and banking arrangements proposed by prospective host countries, while ensuring the Association's independence and international status.</p>
+    </header>
+
+    <!-- Replace YOUR_FORM_ID below with your Formspree form ID -->
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+
+        <!-- Section I -->
+        <fieldset>
+            <legend>Section I: General Information</legend>
+            <div class="form-group">
+                <label>1. Country:</label>
+                <input type="text" name="Country" required>
+            </div>
+            <div class="form-group">
+                <label>2. Name of Applicant:</label>
+                <input type="text" name="Applicant_Name" required>
+            </div>
+            <div class="form-group">
+                <label>3. Position or Title:</label>
+                <input type="text" name="Position" required>
+            </div>
+            <div class="form-group">
+                <label>4. Name of Organization or Institution Represented:</label>
+                <input type="text" name="Organization" required>
+            </div>
+            <div class="form-group">
+                <label>5. Email Address:</label>
+                <input type="email" name="Email" required>
+            </div>
+            <div class="form-group">
+                <label>6. Phone Number:</label>
+                <input type="tel" name="Phone" required>
+            </div>
+        </fieldset>
+
+        <!-- Section II -->
+        <fieldset>
+            <legend>Section II: Legal Registration of the Association</legend>
+            
+            <div class="question-box">
+                <div class="question-title">1. Will the Asian Apicultural Association be registered as an international association in your country?</div>
+                <div class="radio-group">
+                    <label><input type="radio" name="Legal_1" value="Yes" required> Yes</label>
+                    <label><input type="radio" name="Legal_1" value="No"> No</label>
+                </div>
+            </div>
+
+            <div class="question-box">
+                <div class="question-title">2. Will the Asian Apicultural Association be registered as a local association in your country?</div>
+                <div class="radio-group">
+                    <label><input type="radio" name="Legal_2" value="Yes" required> Yes</label>
+                    <label><input type="radio" name="Legal_2" value="No"> No</label>
+                </div>
+            </div>
+
+            <div class="question-box">
+                <div class="question-title">3. Will the Association be registered under its official name, Asian Apicultural Association (AAA)?</div>
+                <div class="radio-group">
+                    <label><input type="radio" name="Legal_3" value="Yes" required> Yes</label>
+                    <label><input type="radio" name="Legal_3" value="No"> No</label>
+                </div>
+            </div>
+
+            <div class="question-box">
+                <div class="question-title">4. Is there a government or official authority responsible for approving the registration of the Association and hosting its headquarters in your country?</div>
+                <div class="radio-group">
+                    <label><input type="radio" name="Legal_4" value="Yes" required> Yes</label>
+                    <label><input type="radio" name="Legal_4" value="No"> No</label>
+                </div>
+            </div>
+
+            <div class="question-box">
+                <div class="question-title">5. Is there a government authority or official institution willing to support or sponsor the Asian Apicultural Association?</div>
+                <div class="radio-group">
+                    <label><input type="radio" name="Legal_5" value="Yes" required> Yes</label>
+                    <label><input type="radio" name="Legal_5" value="No"> No</label>
+                </div>
+                <div class="form-group" style="margin-top: 10px;">
+                    <label>Name of supporting or sponsoring organization & Type of support:</label>
+                    <input type="text" name="Sponsor_Details">
+                </div>
+            </div>
+
+            <div class="question-box">
+                <div class="question-title">6. Do the laws and regulations of your country and the Association's bylaws allow the President of the Asian Apicultural Association to be from outside the host country?</div>
+                <div class="radio-group">
+                    <label><input type="radio" name="Legal_6" value="Yes" required> Yes</label>
+                    <label><input type="radio" name="Legal_6" value="No"> No</label>
+                </div>
+            </div>
+
+            <div class="question-box">
+                <div class="question-title">7. Do the applicable regulations allow members of the Association's Board of Directors to be from different countries?</div>
+                <div class="radio-group">
+                    <label><input type="radio" name="Legal_7" value="Yes" required> Yes</label>
+                    <label><input type="radio" name="Legal_7" value="No"> No</label>
+                </div>
+            </div>
+
+            <div class="question-box">
+                <div class="question-title">8. Do the applicable regulations allow individuals and institutions from different Asian countries to become members of the Association?</div>
+                <div class="radio-group">
+                    <label><input type="radio" name="Legal_8" value="Yes" required> Yes</label>
+                    <label><input type="radio" name="Legal_8" value="No"> No</label>
+                </div>
+            </div>
+
+            <div class="question-box">
+                <div class="question-title">9. Do the applicable regulations allow the Association's registered headquarters to be relocated to another country if the members decide to do so in accordance with its bylaws?</div>
+                <div class="radio-group">
+                    <label><input type="radio" name="Legal_9" value="Yes" required> Yes</label>
+                    <label><input type="radio" name="Legal_9" value="No"> No</label>
+                </div>
+            </div>
+
+            <div class="question-box">
+                <div class="question-title">10. If the Association's bylaws stipulate that the President cannot be elected from the country hosting the Association's headquarters, would you agree to this provision?</div>
+                <div class="radio-group">
+                    <label><input type="radio" name="Legal_10" value="Yes" required> Yes</label>
+                    <label><input type="radio" name="Legal_10" value="No"> No</label>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Section III -->
+        <fieldset>
+            <legend>Section III: Headquarters, Administration, and Costs</legend>
+            
+            <div class="question-box">
+                <div class="question-title">1. Will official premises be provided for the Association in your country?</div>
+                <div class="radio-group">
+                    <label><input type="radio" name="HQ_1" value="Yes" required> Yes</label>
+                    <label><input type="radio" name="HQ_1" value="No"> No</label>
+                </div>
+            </div>
+
+            <div class="question-box">
+                <div class="question-title">2. Will offices, equipment, secretarial services, and administrative support be provided to the Association?</div>
+                <div class="radio-group">
+                    <label><input type="radio" name="HQ_2" value="Yes" required> Yes</label>
+                    <label><input type="radio" name="HQ_2" value="No"> No</label>
+                </div>
+            </div>
+
+            <div class="question-box">
+                <div class="question-title">3. Is there an organization willing to cover the costs of registering the Association and establishing its headquarters?</div>
+                <div class="radio-group">
+                    <label><input type="radio" name="HQ_3" value="Yes" required> Yes</label>
+                    <label><input type="radio" name="HQ_3" value="No"> No</label>
+                </div>
+            </div>
+
+            <div class="question-box">
+                <div class="question-title">4. Will the Asian Apicultural Association be required to bear any costs related to registration, premises, or operations?</div>
+                <div class="radio-group">
+                    <label><input type="radio" name="HQ_4" value="Yes" required> Yes</label>
+                    <label><input type="radio" name="HQ_4" value="No"> No</label>
+                </div>
+            </div>
+
+            <div class="question-box">
+                <div class="question-title">5. Will the Association's management and decisions remain under the authority of its elected Board of Directors without interference from the host organization?</div>
+                <div class="radio-group">
+                    <label><input type="radio" name="HQ_5" value="Yes" required> Yes</label>
+                    <label><input type="radio" name="HQ_5" value="No"> No</label>
+                </div>
+            </div>
+
+            <div class="question-box">
+                <div class="question-title">6. Will the headquarters be able to provide administrative services to Association members across different Asian countries?</div>
+                <div class="radio-group">
+                    <label><input type="radio" name="HQ_6" value="Yes" required> Yes</label>
+                    <label><input type="radio" name="HQ_6" value="No"> No</label>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Section IV -->
+        <fieldset>
+            <legend>Section IV: Bank Account and Financial Management</legend>
+            
+            <div class="question-box">
+                <div class="question-title">1. Will an official bank account be opened in your country under the name of the Asian Apicultural Association (AAA)?</div>
+                <div class="radio-group">
+                    <label><input type="radio" name="Bank_1" value="Yes" required> Yes</label>
+                    <label><input type="radio" name="Bank_1" value="No"> No</label>
+                </div>
+            </div>
+
+            <div class="question-box">
+                <div class="question-title">2. Will the bank account be permitted to receive membership fees from different Asian countries?</div>
+                <div class="radio-group">
+                    <label><input type="radio" name="Bank_2" value="Yes" required> Yes</label>
+                    <label><input type="radio" name="Bank_2" value="No"> No</label>
+                </div>
+            </div>
+
+            <div class="question-box">
+                <div class="question-title">3. Will the bank account be permitted to receive international transfers and financial support from outside the country, in accordance with applicable regulations?</div>
+                <div class="radio-group">
+                    <label><input type="radio" name="Bank_3" value="Yes" required> Yes</label>
+                    <label><input type="radio" name="Bank_3" value="No"> No</label>
+                </div>
+            </div>
+
+            <div class="question-box">
+                <div class="question-title">4. Will the bank account be permitted to transfer funds to other countries?</div>
+                <div class="radio-group">
+                    <label><input type="radio" name="Bank_4" value="Yes" required> Yes</label>
+                    <label><input type="radio" name="Bank_4" value="No"> No</label>
+                </div>
+            </div>
+
+            <div class="question-box">
+                <div class="question-title">5. Will the President of the Association, even if residing outside the host country, be able to access the account and monitor balances and transactions electronically?</div>
+                <div class="radio-group">
+                    <label><input type="radio" name="Bank_5" value="Yes" required> Yes</label>
+                    <label><input type="radio" name="Bank_5" value="No"> No</label>
+                </div>
+            </div>
+
+            <div class="question-box">
+                <div class="question-title">6. Can the President of the Association, or individuals authorized by the Board of Directors, be granted authority to approve withdrawals, transfers, and other banking transactions?</div>
+                <div class="radio-group">
+                    <label><input type="radio" name="Bank_6" value="Yes" required> Yes</label>
+                    <label><input type="radio" name="Bank_6" value="No"> No</label>
+                </div>
+            </div>
+
+            <div class="question-box">
+                <div class="question-title">7. Can the authorized bank account signatories
